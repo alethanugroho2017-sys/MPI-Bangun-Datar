@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import { ActivePage, ShapeType, Game3Object } from '../../types';
 import { GAME3_OBJECTS } from '../../data/gamesData';
-import { RealisticItemSvg } from '../RealisticItemSvg';
+import { SmartObjectImage } from '../SmartObjectImage';
 import { GeoMascot } from '../GeoMascot';
 import { sound } from '../../utils/audio';
 
@@ -139,21 +139,12 @@ export const Game3Kelompokkan: React.FC<Game3Props> = ({ onNavigate }) => {
                   }`}
                 >
                   <div className="w-16 h-16 rounded-xl overflow-hidden bg-slate-200 mb-2 border border-slate-300">
-                    <img
+                    <SmartObjectImage
                       src={obj.imageUrl}
                       alt={obj.name}
+                      svgFallbackType={obj.svgFallbackType}
                       className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
-                      onError={(e) => {
-                        const target = e.target as HTMLElement;
-                        target.style.display = 'none';
-                        const fallback = target.nextElementSibling as HTMLElement;
-                        if (fallback) fallback.style.display = 'flex';
-                      }}
                     />
-                    <div className="hidden w-full h-full p-1 bg-amber-50 items-center justify-center">
-                      <RealisticItemSvg type={obj.svgFallbackType} />
-                    </div>
                   </div>
                   <h5 className="font-bold text-xs text-slate-900 truncate w-full">{obj.name}</h5>
                   <span className="text-[10px] text-amber-700 font-semibold mt-0.5">

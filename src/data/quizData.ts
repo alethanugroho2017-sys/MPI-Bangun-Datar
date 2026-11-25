@@ -12,7 +12,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0,
     shapeType: 'persegi',
     svgFallbackType: 'catur',
-    photoUrl: '/src/assets/images/real_chessboard_square_1793925620983.jpg',
+    photoUrl: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=75',
     explanation: 'Persegi adalah bangun datar yang memiliki 4 sisi dan SEMUA sisinya berukuran tepat sama panjang.'
   },
   {
@@ -26,7 +26,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 1,
     shapeType: 'persegi_panjang',
     svgFallbackType: 'buku',
-    photoUrl: '/src/assets/images/real_book_rectangle_1793925639382.jpg',
+    photoUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=75',
     explanation: 'Pada persegi panjang, sisi atas sama dengan sisi bawah, dan sisi kiri sama dengan sisi kanan (sisi berhadapan sama panjang).'
   },
   {
@@ -40,7 +40,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 1,
     shapeType: 'segitiga',
     svgFallbackType: 'pizza',
-    photoUrl: '/src/assets/images/real_pizza_triangle_1793925621509.jpg',
+    photoUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=75',
     explanation: 'Segitiga dibentuk oleh tepat 3 sisi garis lurus yang saling terhubung.'
   },
   {
@@ -54,7 +54,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 1,
     shapeType: 'lingkaran',
     svgFallbackType: 'jam',
-    photoUrl: '/src/assets/images/real_clock_circle_1793925621166.jpg',
+    photoUrl: 'https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=75',
     explanation: 'Jam dinding bundar dibatasi oleh garis lengkung tertutup tanpa sudut, sehingga berbentuk lingkaran.'
   },
   {
@@ -68,7 +68,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0,
     shapeType: 'oval',
     svgFallbackType: 'telur',
-    photoUrl: '/src/assets/images/real_egg_oval_1793925622798.jpg',
+    photoUrl: 'https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=600&q=75',
     explanation: 'Oval adalah bangun lengkung tertutup yang bentuknya lonjong memanjang seperti telur ayam.'
   },
   {
@@ -82,7 +82,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0,
     shapeType: 'trapesium',
     svgFallbackType: 'kap_lampu',
-    photoUrl: '/src/assets/images/real_lamp_trapezoid_1793925623048.jpg',
+    photoUrl: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=75',
     explanation: 'Trapesium memiliki 4 sisi dan 4 titik sudut, dengan keistimewaan memiliki sepasang sisi yang sejajar.'
   },
   {
@@ -96,7 +96,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 1,
     shapeType: 'persegi',
     svgFallbackType: 'catur',
-    photoUrl: '/src/assets/images/real_chessboard_square_1793925620983.jpg',
+    photoUrl: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=75',
     explanation: 'Persegi memiliki 4 titik sudut siku-siku di setiap pojoknya.'
   },
   {
@@ -110,7 +110,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 0,
     shapeType: 'segitiga',
     svgFallbackType: 'rambu',
-    photoUrl: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=75',
     explanation: 'Rambu peringatan lalu lintas berbentuk segitiga, yang memiliki 3 sisi garis lurus dan 3 titik sudut.'
   },
   {
@@ -124,7 +124,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     correctIndex: 1,
     shapeType: 'lingkaran',
     svgFallbackType: 'piring',
-    photoUrl: 'https://images.unsplash.com/photo-1603199506695-17739e4a3073?auto=format&fit=crop&w=800&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1545874239-30867bd8f206?auto=format&fit=crop&w=600&q=75',
     explanation: 'Roda sepeda, piring makan, dan koin logam semuanya bundar dan merupakan contoh bangun lingkaran.'
   },
   {
@@ -137,8 +137,8 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     ],
     correctIndex: 0,
     shapeType: 'persegi',
-    svgFallbackType: 'saputangan',
-    photoUrl: 'https://images.unsplash.com/photo-1607344645866-009c320b5ab8?auto=format&fit=crop&w=800&q=80',
+    svgFallbackType: 'ubin',
+    photoUrl: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=75',
     explanation: 'Hebat! Persegi memiliki 4 sisi kembar yang semuanya sama panjang, sedangkan persegi panjang memiliki pasangan sisi panjang dan pendek yang berhadapan.'
   }
 ];

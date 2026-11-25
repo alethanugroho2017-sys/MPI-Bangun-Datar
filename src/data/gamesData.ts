@@ -4,7 +4,7 @@ export const GAME1_QUESTIONS: Game1Question[] = [
   {
     id: 'g1-1',
     title: 'Papan Catur Kayu',
-    imageUrl: '/src/assets/images/real_chessboard_square_1793925620983.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'catur',
     correctShape: 'persegi',
     options: [
@@ -18,7 +18,7 @@ export const GAME1_QUESTIONS: Game1Question[] = [
   {
     id: 'g1-2',
     title: 'Buku Tulis Catatan Siswa',
-    imageUrl: '/src/assets/images/real_book_rectangle_1793925639382.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'buku',
     correctShape: 'persegi_panjang',
     options: [
@@ -32,7 +32,7 @@ export const GAME1_QUESTIONS: Game1Question[] = [
   {
     id: 'g1-3',
     title: 'Potongan Pizza Keju',
-    imageUrl: '/src/assets/images/real_pizza_triangle_1793925621509.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'pizza',
     correctShape: 'segitiga',
     options: [
@@ -45,8 +45,8 @@ export const GAME1_QUESTIONS: Game1Question[] = [
   },
   {
     id: 'g1-4',
-    title: 'Jam Dinding Bulat Merah',
-    imageUrl: '/src/assets/images/real_clock_circle_1793925621166.jpg',
+    title: 'Jam Dinding Bulat',
+    imageUrl: 'https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'jam',
     correctShape: 'lingkaran',
     options: [
@@ -60,7 +60,7 @@ export const GAME1_QUESTIONS: Game1Question[] = [
   {
     id: 'g1-5',
     title: 'Telur Ayam Segar',
-    imageUrl: '/src/assets/images/real_egg_oval_1793925622798.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'telur',
     correctShape: 'oval',
     options: [
@@ -74,7 +74,7 @@ export const GAME1_QUESTIONS: Game1Question[] = [
   {
     id: 'g1-6',
     title: 'Kap Lampu Meja Gantung',
-    imageUrl: '/src/assets/images/real_lamp_trapezoid_1793925623048.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'kap_lampu',
     correctShape: 'trapesium',
     options: [
@@ -93,7 +93,7 @@ export const GAME2_PAIRS: Game2Pair[] = [
     bendaName: 'Papan Catur Kayu',
     shapeType: 'persegi',
     shapeName: 'Persegi',
-    imageUrl: '/src/assets/images/real_chessboard_square_1793925620983.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'catur',
   },
   {
@@ -101,7 +101,7 @@ export const GAME2_PAIRS: Game2Pair[] = [
     bendaName: 'Buku Tulis',
     shapeType: 'persegi_panjang',
     shapeName: 'Persegi Panjang',
-    imageUrl: '/src/assets/images/real_book_rectangle_1793925639382.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'buku',
   },
   {
@@ -109,7 +109,7 @@ export const GAME2_PAIRS: Game2Pair[] = [
     bendaName: 'Potongan Pizza',
     shapeType: 'segitiga',
     shapeName: 'Segitiga',
-    imageUrl: '/src/assets/images/real_pizza_triangle_1793925621509.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'pizza',
   },
   {
@@ -117,7 +117,7 @@ export const GAME2_PAIRS: Game2Pair[] = [
     bendaName: 'Jam Dinding',
     shapeType: 'lingkaran',
     shapeName: 'Lingkaran',
-    imageUrl: '/src/assets/images/real_clock_circle_1793925621166.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'jam',
   },
   {
@@ -125,7 +125,7 @@ export const GAME2_PAIRS: Game2Pair[] = [
     bendaName: 'Telur Ayam',
     shapeType: 'oval',
     shapeName: 'Oval (Lonjong)',
-    imageUrl: '/src/assets/images/real_egg_oval_1793925622798.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'telur',
   },
   {
@@ -133,7 +133,7 @@ export const GAME2_PAIRS: Game2Pair[] = [
     bendaName: 'Kap Lampu Meja',
     shapeType: 'trapesium',
     shapeName: 'Trapesium',
-    imageUrl: '/src/assets/images/real_lamp_trapezoid_1793925623048.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'kap_lampu',
   }
 ];
@@ -144,39 +144,39 @@ export const GAME3_OBJECTS: Game3Object[] = [
     name: 'Papan Catur',
     shapeType: 'persegi',
     shapeName: 'Persegi',
-    imageUrl: '/src/assets/images/real_chessboard_square_1793925620983.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'catur',
   },
   {
     id: 'g3-2',
-    name: 'Sapu Tangan',
+    name: 'Mainan Rubik',
     shapeType: 'persegi',
     shapeName: 'Persegi',
-    imageUrl: 'https://images.unsplash.com/photo-1607344645866-009c320b5ab8?auto=format&fit=crop&w=800&q=80',
-    svgFallbackType: 'saputangan',
+    imageUrl: 'https://images.unsplash.com/photo-1740119708658-436f57715c19?auto=format&fit=crop&w=600&q=75',
+    svgFallbackType: 'ubin',
   },
   {
     id: 'g3-3',
     name: 'Buku Tulis Siswa',
     shapeType: 'persegi_panjang',
     shapeName: 'Persegi Panjang',
-    imageUrl: '/src/assets/images/real_book_rectangle_1793925639382.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'buku',
   },
   {
     id: 'g3-4',
-    name: 'Uang Kertas',
+    name: 'Pintu Kayu',
     shapeType: 'persegi_panjang',
     shapeName: 'Persegi Panjang',
-    imageUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80',
-    svgFallbackType: 'uang',
+    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=75',
+    svgFallbackType: 'pintu',
   },
   {
     id: 'g3-5',
     name: 'Potongan Pizza',
     shapeType: 'segitiga',
     shapeName: 'Segitiga',
-    imageUrl: '/src/assets/images/real_pizza_triangle_1793925621509.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'pizza',
   },
   {
@@ -184,7 +184,7 @@ export const GAME3_OBJECTS: Game3Object[] = [
     name: 'Rambu Bahaya',
     shapeType: 'segitiga',
     shapeName: 'Segitiga',
-    imageUrl: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'rambu',
   },
   {
@@ -192,7 +192,7 @@ export const GAME3_OBJECTS: Game3Object[] = [
     name: 'Piring Makan',
     shapeType: 'lingkaran',
     shapeName: 'Lingkaran',
-    imageUrl: 'https://images.unsplash.com/photo-1603199506695-17739e4a3073?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1545874239-30867bd8f206?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'piring',
   },
   {
@@ -200,7 +200,7 @@ export const GAME3_OBJECTS: Game3Object[] = [
     name: 'Jam Dinding Bulat',
     shapeType: 'lingkaran',
     shapeName: 'Lingkaran',
-    imageUrl: '/src/assets/images/real_clock_circle_1793925621166.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'jam',
   },
   {
@@ -208,7 +208,7 @@ export const GAME3_OBJECTS: Game3Object[] = [
     name: 'Telur Ayam Alami',
     shapeType: 'oval',
     shapeName: 'Oval',
-    imageUrl: '/src/assets/images/real_egg_oval_1793925622798.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'telur',
   },
   {
@@ -216,7 +216,7 @@ export const GAME3_OBJECTS: Game3Object[] = [
     name: 'Semangka Lonjong',
     shapeType: 'oval',
     shapeName: 'Oval',
-    imageUrl: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'semangka',
   },
   {
@@ -224,7 +224,7 @@ export const GAME3_OBJECTS: Game3Object[] = [
     name: 'Kap Lampu Gantung',
     shapeType: 'trapesium',
     shapeName: 'Trapesium',
-    imageUrl: '/src/assets/images/real_lamp_trapezoid_1793925623048.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'kap_lampu',
   },
   {
@@ -232,7 +232,7 @@ export const GAME3_OBJECTS: Game3Object[] = [
     name: 'Pot Bunga Trapesium',
     shapeType: 'trapesium',
     shapeName: 'Trapesium',
-    imageUrl: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=75',
     svgFallbackType: 'pot_trapesium',
   }
 ];

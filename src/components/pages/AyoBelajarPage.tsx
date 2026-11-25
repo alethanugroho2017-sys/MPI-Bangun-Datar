@@ -16,7 +16,7 @@ import { ActivePage, ShapeType, RealPhotoItem } from '../../types';
 import { SHAPES_DATA } from '../../data/shapesData';
 import { InteractiveShapeSvg } from '../InteractiveShapeSvg';
 import { PhotoModal } from '../PhotoModal';
-import { RealisticItemSvg } from '../RealisticItemSvg';
+import { SmartObjectImage } from '../SmartObjectImage';
 import { GeoMascot } from '../GeoMascot';
 import { sound } from '../../utils/audio';
 
@@ -299,31 +299,21 @@ export const AyoBelajarPage: React.FC<AyoBelajarPageProps> = ({
             >
               {/* Photo Image Area */}
               <div className="relative aspect-4/3 w-full bg-slate-200 overflow-hidden">
-                <img
+                <SmartObjectImage
                   src={photo.imageUrl}
                   alt={photo.altText}
+                  svgFallbackType={photo.svgFallbackType}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    const target = e.target as HTMLElement;
-                    target.style.display = 'none';
-                    const fallback = target.nextElementSibling as HTMLElement;
-                    if (fallback) fallback.style.display = 'flex';
-                  }}
                 />
-                {/* Fallback container if photo blocked */}
-                <div className="hidden absolute inset-0 w-full h-full items-center justify-center p-3 bg-amber-50">
-                  <RealisticItemSvg type={photo.svgFallbackType} className="w-full h-full" />
-                </div>
 
                 {/* Inspect Zoom Pill */}
-                <div className="absolute top-2.5 right-2.5 bg-black/70 hover:bg-black/90 text-white text-[11px] font-semibold px-2 py-1 rounded-lg backdrop-blur-xs flex items-center gap-1 shadow">
+                <div className="absolute top-2.5 right-2.5 z-20 bg-black/70 hover:bg-black/90 text-white text-[11px] font-semibold px-2 py-1 rounded-lg backdrop-blur-xs flex items-center gap-1 shadow">
                   <ZoomIn className="w-3 h-3" />
                   <span>Perbesar</span>
                 </div>
 
                 {/* Shape Tag */}
-                <div className="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded-md backdrop-blur-xs">
+                <div className="absolute bottom-2 left-2 z-20 bg-slate-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded-md backdrop-blur-xs">
                   {photo.shapeName}
                 </div>
               </div>

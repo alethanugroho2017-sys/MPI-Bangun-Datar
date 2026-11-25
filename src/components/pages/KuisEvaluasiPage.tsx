@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import { ActivePage } from '../../types';
 import { QUIZ_QUESTIONS } from '../../data/quizData';
-import { RealisticItemSvg } from '../RealisticItemSvg';
+import { SmartObjectImage } from '../SmartObjectImage';
 import { GeoMascot } from '../GeoMascot';
 import { sound } from '../../utils/audio';
 
@@ -174,23 +174,12 @@ export const KuisEvaluasiPage: React.FC<KuisEvaluasiProps> = ({
         {currentQ.photoUrl && (
           <div className="flex items-center gap-4 p-3 bg-slate-50 rounded-2xl border border-slate-200">
             <div className="w-20 h-20 rounded-xl overflow-hidden bg-slate-200 shrink-0 border border-slate-300">
-              <img
+              <SmartObjectImage
                 src={currentQ.photoUrl}
                 alt="Foto rujukan soal"
+                svgFallbackType={currentQ.svgFallbackType || 'ubin'}
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-                onError={(e) => {
-                  const target = e.target as HTMLElement;
-                  target.style.display = 'none';
-                  const fallback = target.nextElementSibling as HTMLElement;
-                  if (fallback) fallback.style.display = 'flex';
-                }}
               />
-              {currentQ.svgFallbackType && (
-                <div className="hidden w-full h-full p-1 bg-amber-50 items-center justify-center">
-                  <RealisticItemSvg type={currentQ.svgFallbackType} />
-                </div>
-              )}
             </div>
             <div>
               <span className="text-[11px] font-bold text-amber-800 uppercase flex items-center gap-1">

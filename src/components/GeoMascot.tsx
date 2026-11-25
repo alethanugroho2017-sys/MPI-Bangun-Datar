@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Volume2, VolumeX, Sparkles } from 'lucide-react';
 import { sound } from '../utils/audio';
+import { GeoMascotSvg } from './GeoMascotSvg';
 
 interface GeoMascotProps {
   message: string;
@@ -29,8 +30,6 @@ export const GeoMascot: React.FC<GeoMascotProps> = ({
     }
   };
 
-  const mascotImg = '/src/assets/images/geo_mascot_explorer_1793924151999.jpg';
-
   const avatarSizes = {
     sm: 'w-16 h-16',
     md: 'w-24 h-24 md:w-28 md:h-28',
@@ -41,18 +40,8 @@ export const GeoMascot: React.FC<GeoMascotProps> = ({
     <div className={`flex flex-col sm:flex-row items-center sm:items-start gap-4 p-4 rounded-2xl bg-white/95 border-2 border-amber-300 shadow-lg shadow-amber-100/50 backdrop-blur-sm ${className}`}>
       {/* Mascot Avatar with Badge */}
       <div className="relative shrink-0 group cursor-pointer" onClick={handleSpeak} title="Klik GEO untuk mendengarkan!">
-        <div className={`relative ${avatarSizes[size]} rounded-2xl overflow-hidden border-4 border-amber-400 bg-amber-100 shadow-md transform transition-transform group-hover:scale-105 animate-soft-bounce`}>
-          <img
-            src={mascotImg}
-            alt="Maskot GEO Penjelajah Geometri Cilik"
-            className="w-full h-full object-cover object-top"
-            referrerPolicy="no-referrer"
-            onError={(e) => {
-              // Fallback if image fails
-              const target = e.target as HTMLElement;
-              target.style.display = 'none';
-            }}
-          />
+        <div className={`relative ${avatarSizes[size]} rounded-2xl overflow-hidden border-4 border-amber-400 bg-sky-100 shadow-md transform transition-transform group-hover:scale-105 animate-soft-bounce`}>
+          <GeoMascotSvg className="w-full h-full" />
         </div>
         <div className="absolute -bottom-2 -right-1 bg-amber-500 text-white text-[11px] font-bold px-2 py-0.5 rounded-full shadow border-2 border-white flex items-center gap-1">
           <Sparkles className="w-3 h-3" />

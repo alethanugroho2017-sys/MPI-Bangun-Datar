@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { ActivePage, ShapeType, Game2Pair } from '../../types';
 import { GAME2_PAIRS } from '../../data/gamesData';
-import { RealisticItemSvg } from '../RealisticItemSvg';
+import { SmartObjectImage } from '../SmartObjectImage';
 import { GeoMascot } from '../GeoMascot';
 import { sound } from '../../utils/audio';
 
@@ -143,21 +143,12 @@ export const Game2Pasangkan: React.FC<Game2Props> = ({ onNavigate }) => {
                 >
                   <div className="flex items-center gap-3">
                     <div className="w-14 h-14 rounded-xl overflow-hidden bg-slate-200 shrink-0 border border-slate-300">
-                      <img
+                      <SmartObjectImage
                         src={p.imageUrl}
                         alt={p.bendaName}
+                        svgFallbackType={p.svgFallbackType}
                         className="w-full h-full object-cover"
-                        referrerPolicy="no-referrer"
-                        onError={(e) => {
-                          const target = e.target as HTMLElement;
-                          target.style.display = 'none';
-                          const fallback = target.nextElementSibling as HTMLElement;
-                          if (fallback) fallback.style.display = 'flex';
-                        }}
                       />
-                      <div className="hidden w-full h-full p-1 bg-amber-50 items-center justify-center">
-                        <RealisticItemSvg type={p.svgFallbackType} />
-                      </div>
                     </div>
                     <div>
                       <h4 className="font-bold text-slate-900 text-sm">{p.bendaName}</h4>

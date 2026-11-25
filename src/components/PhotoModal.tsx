@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { X, Volume2, Sparkles, Info } from 'lucide-react';
 import { RealPhotoItem } from '../types';
-import { RealisticItemSvg } from './RealisticItemSvg';
+import { SmartObjectImage } from './SmartObjectImage';
 import { sound } from '../utils/audio';
 
 interface PhotoModalProps {
@@ -11,7 +11,6 @@ interface PhotoModalProps {
 
 export const PhotoModal: React.FC<PhotoModalProps> = ({ photo, onClose }) => {
   const [showShapeOverlay, setShowShapeOverlay] = useState(true);
-  const [imgError, setImgError] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
 
   if (!photo) return null;
@@ -134,32 +133,22 @@ export const PhotoModal: React.FC<PhotoModalProps> = ({ photo, onClose }) => {
         <div className="p-6 space-y-5">
           {/* Main Photo Viewer Area with Shape Overlay */}
           <div className="relative w-full aspect-video md:aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 border-2 border-slate-200 flex items-center justify-center">
-            {!imgError ? (
-              <img
-                src={photo.imageUrl}
-                alt={photo.altText}
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-                onError={() => setImgError(true)}
-              />
-            ) : (
-              <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-amber-50/60">
-                <div className="w-48 h-48 mb-2">
-                  <RealisticItemSvg type={photo.svgFallbackType} />
-                </div>
-                <p className="text-xs text-amber-800 font-medium">Mode Ilustrasi Benda Realistis Aktif</p>
-              </div>
-            )}
+            <SmartObjectImage
+              src={photo.imageUrl}
+              alt={photo.altText}
+              svgFallbackType={photo.svgFallbackType}
+              className="w-full h-full object-cover"
+            />
 
             {/* Geometric Shape Outline Overlay */}
             {showShapeOverlay && (
-              <svg className="absolute inset-0 w-full h-full pointer-events-none">
+              <svg className="absolute inset-0 z-20 w-full h-full pointer-events-none">
                 {getOverlaySvg()}
               </svg>
             )}
 
             {/* Shape Badge Tag */}
-            <div className="absolute top-4 left-4 bg-slate-900/85 text-white text-xs font-bold px-3 py-1.5 rounded-xl backdrop-blur-md border border-white/20 shadow-lg flex items-center gap-2">
+            <div className="absolute top-4 left-4 z-30 bg-slate-900/85 text-white text-xs font-bold px-3 py-1.5 rounded-xl backdrop-blur-md border border-white/20 shadow-lg flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-amber-300" />
               <span>Bentuk: {photo.shapeName}</span>
             </div>
@@ -170,7 +159,7 @@ export const PhotoModal: React.FC<PhotoModalProps> = ({ photo, onClose }) => {
                 sound.playClick();
                 setShowShapeOverlay(!showShapeOverlay);
               }}
-              className="absolute bottom-4 right-4 bg-white/95 hover:bg-white text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-xl shadow-lg border border-slate-200 transition-all flex items-center gap-1.5"
+              className="absolute bottom-4 right-4 z-30 bg-white/95 hover:bg-white text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-xl shadow-lg border border-slate-200 transition-all flex items-center gap-1.5"
             >
               <span>{showShapeOverlay ? 'Sembunyikan Garis Bentuk' : 'Tampilkan Garis Bentuk'}</span>
             </button>

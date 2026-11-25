@@ -6,7 +6,7 @@ export const VIDEO_LESSONS: VideoLesson[] = [
     title: 'Mengenal Bangun Datar di Sekitar Kita',
     duration: '04:15',
     description: 'Petualangan seru bersama GEO menjelajahi berbagai bentuk bangun datar yang ada di rumah, sekolah, dan jalan raya.',
-    thumbnail: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=75',
     defaultYoutubeId: 'EB2rOeSnheY', // Referensi resmi video pembelajaran: https://www.youtube.com/watch?v=EB2rOeSnheY
     narrativePoints: [
       'Bangun datar adalah bentuk bidang dua dimensi yang memiliki keliling dan luas.',
@@ -35,7 +35,7 @@ export const VIDEO_LESSONS: VideoLesson[] = [
     title: 'Mengenal Persegi dan Persegi Panjang',
     duration: '03:45',
     description: 'Pelajari perbedaan penting antara persegi yang memiliki 4 sisi sama panjang dan persegi panjang yang sisi berhadapannya sama.',
-    thumbnail: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=75',
     defaultYoutubeId: 'EB2rOeSnheY',
     narrativePoints: [
       'Persegi memiliki 4 sisi yang SEMUANYA sama panjang.',
@@ -64,7 +64,7 @@ export const VIDEO_LESSONS: VideoLesson[] = [
     title: 'Mengenal Segitiga & Sudut Runcingnya',
     duration: '03:10',
     description: 'Menemukan bentuk segitiga pada penggaris, potongan pizza, rambu jalan, serta atap rumah yang kuat dan kokoh.',
-    thumbnail: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=75',
     defaultYoutubeId: 'EB2rOeSnheY',
     narrativePoints: [
       'Segitiga adalah bangun datar dengan 3 sisi garis lurus.',
@@ -93,7 +93,7 @@ export const VIDEO_LESSONS: VideoLesson[] = [
     title: 'Mengenal Lingkaran yang Bulat Sempurna',
     duration: '03:30',
     description: 'Mengapa roda sepeda dibuat berbentuk lingkaran? Temukan rahasia bentuk lingkaran yang tidak memiliki sudut sama sekali.',
-    thumbnail: 'https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=75',
     defaultYoutubeId: 'EB2rOeSnheY',
     narrativePoints: [
       'Lingkaran dibatasi oleh 1 garis lengkung tertutup rapat.',
@@ -122,7 +122,7 @@ export const VIDEO_LESSONS: VideoLesson[] = [
     title: 'Mengenal Bentuk Oval atau Lonjong',
     duration: '02:50',
     description: 'Lihatlah keindahan bentuk oval pada sebutir telur ayam, cermin rias yang anggun, dan buah semangka lonjong.',
-    thumbnail: 'https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=800&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=600&q=75',
     defaultYoutubeId: 'EB2rOeSnheY',
     narrativePoints: [
       'Oval sering disebut juga bentuk lonjong.',
@@ -151,7 +151,7 @@ export const VIDEO_LESSONS: VideoLesson[] = [
     title: 'Mengenal Trapesium dan Sisi Sejajarnya',
     duration: '03:20',
     description: 'Mengenal keunikan trapesium dengan sepasang sisi yang sejajar, terlihat pada kap lampu gantung dan tas jinjing.',
-    thumbnail: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=75',
     defaultYoutubeId: 'EB2rOeSnheY',
     narrativePoints: [
       'Trapesium adalah bangun datar segi empat dengan 4 sisi dan 4 titik sudut.',

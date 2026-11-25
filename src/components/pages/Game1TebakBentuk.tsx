@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import { ActivePage, ShapeType } from '../../types';
 import { GAME1_QUESTIONS } from '../../data/gamesData';
-import { RealisticItemSvg } from '../RealisticItemSvg';
+import { SmartObjectImage } from '../SmartObjectImage';
 import { GeoMascot } from '../GeoMascot';
 import { sound } from '../../utils/audio';
 
@@ -166,23 +166,14 @@ export const Game1TebakBentuk: React.FC<Game1Props> = ({ onNavigate }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
           {/* Real Photo Viewer */}
           <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-slate-100 border-2 border-slate-200 flex items-center justify-center shadow-inner">
-            <img
+            <SmartObjectImage
               src={currentQ.imageUrl}
               alt={currentQ.title}
+              svgFallbackType={currentQ.svgFallbackType}
               className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-              onError={(e) => {
-                const target = e.target as HTMLElement;
-                target.style.display = 'none';
-                const fallback = target.nextElementSibling as HTMLElement;
-                if (fallback) fallback.style.display = 'flex';
-              }}
             />
-            <div className="hidden absolute inset-0 w-full h-full items-center justify-center p-4 bg-amber-50">
-              <RealisticItemSvg type={currentQ.svgFallbackType} className="w-full h-full" />
-            </div>
 
-            <div className="absolute top-3 left-3 bg-slate-900/80 text-white text-xs font-bold px-3 py-1 rounded-lg backdrop-blur-xs">
+            <div className="absolute top-3 left-3 z-20 bg-slate-900/80 text-white text-xs font-bold px-3 py-1 rounded-lg backdrop-blur-xs">
               {currentQ.title}
             </div>
           </div>

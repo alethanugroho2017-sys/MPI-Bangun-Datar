@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Play, Sparkles, BookOpen, Film, Gamepad2, Award, Music, VolumeX, Eye } from 'lucide-react';
 import { ActivePage } from '../../types';
 import { sound } from '../../utils/audio';
+import { HeroWorldSvg } from '../HeroWorldSvg';
+import { GeoMascotSvg } from '../GeoMascotSvg';
 
 interface HomeScreenProps {
   onStart: (page: ActivePage) => void;
@@ -9,9 +11,6 @@ interface HomeScreenProps {
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({ onStart }) => {
   const [bgmActive, setBgmActive] = useState(sound.getBgmState());
-
-  const heroLandscapeImg = '/src/assets/images/geometry_world_hero_1793924151310.jpg';
-  const mascotImg = '/src/assets/images/geo_mascot_explorer_1793924151999.jpg';
 
   const toggleBgm = () => {
     sound.playClick();
@@ -58,14 +57,9 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onStart }) => {
 
       {/* Main Hero Card with Geometry World Landscape */}
       <div className="relative mt-6 rounded-3xl overflow-hidden border-4 border-amber-300 bg-white shadow-xl">
-        {/* Landscape Graphic Background with soft overlay */}
+        {/* Landscape Graphic Background (Instant SVG) with soft overlay */}
         <div className="relative h-64 sm:h-80 md:h-96 w-full overflow-hidden">
-          <img
-            src={heroLandscapeImg}
-            alt="Dunia Petualangan Geometri Bangun Datar"
-            className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
+          <HeroWorldSvg className="w-full h-full" />
           <div className="absolute inset-0 bg-gradient-to-t from-amber-950/85 via-amber-950/30 to-transparent" />
 
           {/* Six Shapes Floating Visual Ribbon */}
@@ -111,13 +105,8 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onStart }) => {
         {/* Mascot GEO Intro Deck */}
         <div className="p-6 md:p-8 bg-gradient-to-b from-amber-50/70 to-white flex flex-col md:flex-row items-center gap-6">
           <div className="relative shrink-0">
-            <div className="w-28 h-28 md:w-32 md:h-32 rounded-3xl overflow-hidden border-4 border-amber-400 bg-amber-200 shadow-md animate-soft-bounce">
-              <img
-                src={mascotImg}
-                alt="Maskot GEO"
-                className="w-full h-full object-cover object-top"
-                referrerPolicy="no-referrer"
-              />
+            <div className="w-28 h-28 md:w-32 md:h-32 rounded-3xl overflow-hidden border-4 border-amber-400 bg-sky-100 shadow-md animate-soft-bounce">
+              <GeoMascotSvg className="w-full h-full" />
             </div>
             <div className="absolute -bottom-2 -right-1 bg-amber-500 text-white text-xs font-bold px-2.5 py-0.5 rounded-full border-2 border-white shadow">
               GEO Explorer
