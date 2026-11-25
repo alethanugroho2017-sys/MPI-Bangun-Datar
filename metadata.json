@@ -1,0 +1,6 @@
+{
+  "name": "Petualangan di Dunia Bangun Datar - Matematika Kelas II SD",
+  "description": "Multimedia Pembelajaran Interaktif (MPI) Matematika Kelas II SD materi Bangun Datar dengan foto asli benda nyata, video pembelajaran, 3 game edukatif, kuis evaluasi otomatis, dan refleksi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
